@@ -5,6 +5,7 @@ import Steeple from "../public/steeple.jpg"
 import img4 from "../public/img4.jpg"
 import Slider from "react-slick"
 import CarouselCard from '../components/CarouselCard'
+import Link from 'next/link'
 
 export default function Home() {
 
@@ -14,7 +15,7 @@ export default function Home() {
         <title>Montgomery Blair High School</title>
       </Head>
       <div className='w-full'>
-        <Header className="z-10" />
+        <Header className="z-0" />
         {/* <Image className='-z-10 absolute top-0' layout='responsive' objectFit='cover' src={img4}/> */}
         <Slider 
           dots={true}
@@ -35,6 +36,20 @@ export default function Home() {
           </div>
           <CarouselCard src={Steeple} />
         </Slider>
+        <div className='flex justify-between'>
+          <div>
+            <h1>News</h1>
+            <div className='flex justify-between'>
+              <Link href=''><button>SCO</button></Link>
+              <Link href=''><button>InfoFlow</button></Link>
+              <Link href=''><button>BNC</button></Link>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WyVyibeMgyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div className='flex justify-between'>
+              
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )

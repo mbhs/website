@@ -22,6 +22,7 @@ a {
   box-sizing: border-box;
 } */
 
-.translate-z-10 {
-  transform: translateZ("-100px");
+.translate-z {
+  /* perspective: none; */
+  transform: translateZ("100px");
 }
