@@ -4,12 +4,10 @@ import Link from "next/link"
 const CarouselCard = ({src}) => {
 
     return (
-        <>
+        <div>
             <Image 
                 src={src} 
                 layout='responsive' 
-                width={"100px"}
-                height={"100px"}
                 objectFit='cover' 
                 // loader={({src})=>`api url ${src}`}
                 // cannot change url
@@ -32,7 +30,7 @@ const CarouselCard = ({src}) => {
                     </Link>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
