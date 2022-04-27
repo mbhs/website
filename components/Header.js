@@ -43,7 +43,6 @@ const Header = ({ children }) => {
         </div>
       </div>
       </div>
-      <div className="bg-gradient-to-b from-blair to-transparent absolute top-0 h-5/6 w-full z-10 pointer-events-none"></div>
       { children }
     </div>
   )

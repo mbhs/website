@@ -27,23 +27,48 @@ export default function Home() {
           speed={500}
           slidesToScroll={1}
           slidesToShow={1}
-          className='z-0'
+          
           style={{
             
           }}
         >
+
           <CarouselCard src={Steeple} />
           <CarouselCard src={Steeple} />
         </Slider>
         <br></br>
         <div className='flex p-10 flex-row-reverse'>
-          <div className='flex justify-start flex-col border-l-4 border-red-600 ml-2 pl-6'>
-            <h1 className='text-center font-bold text-3xl w-full'>Calendar</h1>
+          <div className='flex justify-start flex-col ml-2 pl-6 absolute top-40'>
+            <h1 className='text-center font-bold text-3xl w-full text-white'>Calendar</h1>
             <CalendarCard date="4/5">
               <p>MBHS Official Among Us Tournament <a className='text-blue-600' href="https://au.preterite.me">Register Here</a></p>
             </CalendarCard>
             <CalendarCard date="4/6">
               <p>New MBHS Website Kickoff Party <a className='text-blue-600' href="https://au.preterite.me">RSVP</a></p>
+            </CalendarCard>
+            <CalendarCard date="4/26">
+              <p>filler event</p>
+            </CalendarCard>
+            <CalendarCard date="4/26">
+              <p>filler event</p>
+            </CalendarCard>
+            <CalendarCard date="4/26">
+              <p>filler event</p>
+            </CalendarCard>
+            <CalendarCard date="4/26">
+              <p>filler event</p>
+            </CalendarCard>
+            <CalendarCard date="4/26">
+              <p>filler event</p>
+            </CalendarCard>
+            <CalendarCard date="4/26">
+              <p>filler event</p>
+            </CalendarCard>
+            <CalendarCard date="4/26">
+              <p>filler event</p>
+            </CalendarCard>
+            <CalendarCard date="4/26">
+              <p>filler event</p>
             </CalendarCard>
           </div>
 

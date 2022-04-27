@@ -21,8 +21,3 @@ a {
 * {
   box-sizing: border-box;
 } */
-
-.translate-z {
-  /* perspective: none; */
-  transform: translateZ("100px");
-}

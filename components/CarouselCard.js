@@ -4,7 +4,7 @@ import Link from "next/link"
 const CarouselCard = ({src}) => {
 
     return (
-        <div>
+        <>
             <Image 
                 src={src} 
                 layout='responsive' 
@@ -12,10 +12,13 @@ const CarouselCard = ({src}) => {
                 // loader={({src})=>`api url ${src}`}
                 // cannot change url
                 style={{
-                    zIndex: -20
+                    zIndex: -10
                 }}
             />
-            <div className='rounded-md bg-white w-96 p-8 ml-12 absolute top-72 z-40 translate-z' >
+            {/* im cheating a little */}
+            <div className="bg-gradient-to-b from-blair to-transparent absolute top-0 h-3/5 w-full z-10 pointer-events-none"></div>
+
+            <div className='rounded-md bg-white w-96 p-6 ml-12 absolute top-60 z-20 translate-z' >
                 <h2 className='text-center text-2xl font-bold mb-4 z-10' >
                     New School Website
                 </h2>
@@ -30,7 +33,7 @@ const CarouselCard = ({src}) => {
                     </Link>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
